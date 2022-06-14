@@ -9,11 +9,12 @@
 body {
   background: linear-gradient(
     90deg,
-    rgba(48, 16, 255, 1) 0%,
+    rgb(16, 255, 44) 0%,
     rgba(100, 115, 255, 1) 100%
   );
 }
 .todo-app {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -53,7 +54,7 @@ h1 {
 .todo-input {
   padding: 14px 32px 14px 16px;
   border-radius: 4px 0 0 4px;
-  border: 2px solid rgba(17, 122, 255, 1);
+  border: 2px solid rgb(255, 65, 17);
   outline: none;
   width: 320px;
 }
@@ -66,8 +67,8 @@ h1 {
   outline: none;
   background: linear-gradient(
     90deg,
-    rgba(17, 122, 255, 1) 0%,
-    rgba(20, 159, 255, 1) 100%
+    rgb(255, 57, 17) 0%,
+    rgb(255, 55, 20) 100%
   );
   color: white;
   text-transform: capitalize;
@@ -107,4 +108,23 @@ h1 {
   width: 80%;
   align-self: center;
   background-color: black;
+}
+.check{
+  font-size: 20px;
+}
+.deleteAll{
+  bottom: 455px;
+  position: absolute;
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 57, 17) 0%,
+    rgb(255, 55, 20) 100%
+  );
+  color: white;
+  text-transform: capitalize;
 }

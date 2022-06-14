@@ -5,6 +5,10 @@ import Todoitem from './components/TodoItem';
 
 function App() {
   const [todos, setTodos] = useState([])
+  const deleteAll = () => {
+    setTodos([])
+  }
+  
 
   const addTodo = (text) => {
     let id = 1
@@ -34,7 +38,7 @@ const completeTodo = (id) => {
   return (
     <div className='todo-app'>
       <h1>Todo List</h1>
-      <TodoForm addTodo={addTodo}/>
+      <TodoForm todos={todos} deleteAll={deleteAll} addTodo={addTodo}/>
       <hr className='seperator' />
       {todos.map((todo) => {
         return(
