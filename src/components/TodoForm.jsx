@@ -11,7 +11,6 @@ export default function TodoForm(props) {
       }
       props.todos.map(el => {
         if(el.text === input){
-          
         }
       } )
       setInput('')
