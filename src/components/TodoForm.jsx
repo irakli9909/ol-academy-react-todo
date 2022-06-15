@@ -9,10 +9,6 @@ export default function TodoForm(props) {
       if(input.length >= 1){
         props.addTodo(input)
       }
-      props.todos.map(el => {
-        if(el.text === input){
-        }
-      } )
       setInput('')
     }
   return (
