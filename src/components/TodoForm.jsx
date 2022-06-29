@@ -1,12 +1,11 @@
 import React, {useState} from 'react'
-import { MdOutlineDeleteSweep } from 'react-icons/md'
 
 export default function TodoForm(props) {
     const [input, setInput] = useState('')
 
     const handleSubmit = (e) => {
       e.preventDefault()
-      if(input.length >= 1){
+      if(input.length >= 0){
         props.addTodo(input)
       }
       setInput('')
